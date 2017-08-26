@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/book_imageView"
+        android:layout_width="102dp"
+        android:layout_height="144dp"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@drawable/ic_book_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="144dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="The CERT Guide to Insider Threats: How to Prevent, Detect, and Respond to END" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+
+            <TextView
+                android:id="@+id/author_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                tools:text="Authors Name" />
+
+            <TextView
+                android:id="@+id/date_textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="viewEnd"
+                tools:text="2016-05-23"  />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="3"
+            android:textSize="14sp"
+            android:textColor="#606060"
+            tools:text="The CERT Guide to Insider Threats: How to Prevent, Detect, and Respond to END. The CERT Guide to Insider Threats: How to Prevent, Detect, and Respond to END" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
